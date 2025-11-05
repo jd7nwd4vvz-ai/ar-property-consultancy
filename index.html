@@ -1,0 +1,60 @@
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-[#d9d9d9] text-gray-900 flex flex-col">
+      <header className="p-4 fixed top-0 w-full z-50 bg-white/40 backdrop-blur-lg shadow-sm flex justify-center">
+        <nav className="flex gap-8 text-[#4e6f63] font-medium">
+          <a href="#top" className="hover:text-[#b89c7d] transition">Home</a>
+          <a href="#projects" className="hover:text-[#b89c7d] transition">Projects</a>
+          <a href="#contact" className="hover:text-[#b89c7d] transition">Contact</a>
+        </nav>
+      </header>
+
+      <section id="top" className="w-full bg-gradient-to-b from-[#d9d9d9] to-[#f2f2f2] py-24 text-center flex flex-col items-center fixed top-14 left-0 z-40 backdrop-blur-md">
+        <img src="/logo.png" alt="AR Property Consultancy Logo" className="h-28 mb-2 drop-shadow-sm" />
+        <p className="text-sm tracking-wide text-[#4e6f63] font-serif mb-4 opacity-90">Boutique Property Consultancy</p>
+        <h2 className="text-4xl font-bold mb-3 text-[#4e6f63] font-serif">AR Property Consultancy Ltd</h2>
+        <p className="text-lg max-w-xl text-gray-700">
+          Helping clients find premium investment opportunities across the UK.
+        </p>
+      </section>
+
+      <main className="pt-[350px] flex-1 container mx-auto px-6 py-12 grid gap-8">
+        <section className="text-center">
+          <h2 className="text-4xl font-bold mb-4 text-[#4e6f63] font-serif">A Refined Approach to Property</h2>
+          <p className="text-lg max-w-2xl mx-auto mb-6">
+            We provide outstanding services to help your business grow. This is a simple single-page website template.
+          </p>
+          <a href="#projects" className="inline-block px-8 py-3 bg-[#4e6f63] text-white rounded-full font-medium hover:opacity-90 shadow-md transition-all">View Previous Projects</a>
+        </section>
+
+        <section className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 bg-white shadow-md rounded-2xl border border-[#e6dfe3]">
+            <h3 className="text-xl font-semibold mb-2 text-[#4e6f63]">Service 1</h3>
+            <p className="text-gray-700">Short description of service 1.</p>
+          </div>
+          <div className="p-6 bg-white shadow-md rounded-2xl border border-[#e6dfe3]">
+            <h3 className="text-xl font-semibold mb-2 text-[#4e6f63]">Service 2</h3>
+            <p className="text-gray-700">Short description of service 2.</p>
+          </div>
+          <div className="p-6 bg-white shadow-md rounded-2xl border border-[#e6dfe3]">
+            <h3 className="text-xl font-semibold mb-2 text-[#4e6f63]">Service 3</h3>
+            <p className="text-gray-700">Short description of service 3.</p>
+          </div>
+        </section>
+
+        <section id="projects" className="mt-12 text-center">
+          <h2 className="text-3xl font-bold mb-6 text-[#4e6f63] font-serif">Previous Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <img src="/project1.jpg" alt="Project 1" className="w-full h-48 object-cover rounded-xl shadow border border-[#e6dfe3] hover:scale-105 transition-transform" />
+            <img src="/project2.jpg" alt="Project 2" className="w-full h-48 object-cover rounded-xl shadow border border-[#e6dfe3] hover:scale-105 transition-transform" />
+            <img src="/project3.jpg" alt="Project 3" className="w-full h-48 object-cover rounded-xl shadow border border-[#e6dfe3] hover:scale-105 transition-transform" />
+          </div>
+        </section>
+      </main>
+
+      <footer className="p-6 bg-gray-900 text-white text-center">
+        &copy; {new Date().getFullYear()} AR Property Consultancy Ltd. All rights reserved.
+      </footer>
+    </div>
+  );
+}
